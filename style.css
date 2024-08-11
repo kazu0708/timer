@@ -13,12 +13,30 @@ html, body {
   
   .time {
     margin: .2rem;
-    background-color: lightpink;
+    background-color: white;
     border-radius: 1rem;
-    padding: 2rem;
+    font-size: 20px;
+    border: 2px solid black; /* 黒い枠を追加 */
+    width: 8rem; /* 正方形にするために幅を指定 */
+    height: 8rem; /* 正方形にするために高さを指定 */
   }
-  
+  .time1 {
+    border-radius: 1rem;
+    padding: 3rem; 
+    font-size: 32px;
+  }
   #hour,#min,#sec {
     font-size: 3rem;
     margin-right: 1rem;
   }
+  .down_button {
+  font-size: 4rem; /* ボタン内のテキストサイズを大きくする */
+    padding: 1rem 2rem; /* ボタンの内側の余白を大きくする */
+    border-radius: 0.5rem; /* 角を少し丸める（任意） */
+    
+  }
+  .up_button {
+    font-size: 4rem; /* ボタン内のテキストサイズを大きくする */
+      padding: 1rem 2rem; /* ボタンの内側の余白を大きくする */
+      border-radius: 0.5rem; /* 角を少し丸める（任意） */
+    }
