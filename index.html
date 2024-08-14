@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html labg="en">
+<html>
 <head>
-<meta chrset="utf-8" />
-<title>Countdown Timer</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="style.css">
+  <title>Timer</title>
+  <script src="script.js"></script>
 </head>
 <body>
-  <div class="countdown-container">
-    <h1>カウントダウンタイマー</h1>
-    <div class="time-container">
-      <p class="time"><span id="hour"></span></p>
-      <p class="time1">時間</p>
-      <p class="time"><span id="min"></span></p>
-      <p class="time1">分</p>
-      <p class="time"><span id="sec"></span></p>
-      <p class="time1">秒</p>
-    </div>
-    <div class="down-buttun">
-    <button type="button">-</button>
-    </div>
-    <div class="up-buttun">
-    <button type="button">+</button>
-    </div>
-    <div class="down-buttun">
-    <button type="button">-</button>
+    <div class="timer">
+        <div class="hour">
+            <input type="text" class="inputhourtext" id="textbox">
+            <p>時間</p>
+            <button id="hourdownbutton">－</button>
+            <button id="hourupbutton">＋</button>
+        </div>
+        <div class="minute">
+          <input type="text" class="inputhourtext" id="textbox">
+          <p>分</p>
+          <button id="minutedownbutton">－</button>
+          <button id="minuteupbutton">＋</button>
       </div>
-      <div class="up-buttun">
-    <button type="button">+</button>
+      <div class="second">
+        <input type="text" class="inputhourtext" id="textbox">
+        <p>秒</p>
+        <button id="seconddownbutton">－</button>
+        <button id="secondupbutton">＋</button>
+      </div>
     </div>
-    <div class="down-buttun">
-    <button type="button">-</button>
-    </div>
-    <div class="up-buttun">
-    <button type="button">+</button>
-    </div>
-  </div>
-<script src="script.js"></script>
+    <button class="start">タイマー開始</button>
+    <button class="stop">一時停止</button>
+    <button class="reset">リセット</button>
 </body>
 </html>
