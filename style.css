@@ -1,53 +1,74 @@
 html, body {
-    font-family: serif;
-    font-size: 16px;
-  }
-  
-  .countdown-container {
-    margin: 5rem;
-  }
-  
-  .time-container {
-    display: flex;
-  }
-  
-  .time {
-    margin: .2rem;
-    background-color: white;
-    border-radius: 1rem;
-    font-size: 20px;
-    border: 2px solid black; /* 黒い枠を追加 */
-    width: 8rem; /* 正方形にするために幅を指定 */
-    height: 8rem; /* 正方形にするために高さを指定 */
-  }
-  .time1 {
-    border-radius: 1rem;
-    padding: 3rem; 
-    font-size: 32px;
-  }
-  #hour,#min,#sec {
-    font-size: 3rem;
-    margin-right: 1rem;
-  }
-  .down-buttun {
-    font-size: 1.5rem; /* ボタン内のテキストサイズを大きくする */
-    width: 50px; /* ボタンの幅を設定 */
-    height: 50px; /* ボタンの高さを設定（幅と同じにする） */
-    border-radius: 50%; /* ボタンを完全に丸くする */
-    display: flex; /* コンテンツを中央揃えするためにフレックスボックスを使用 */
-    align-items: center;
-    justify-content: center;
-    float: left;
-
+  font-family: serif;
+  font-size: 16px;
 }
-.up-buttun {
-    font-size: 1.5rem; /* ボタン内のテキストサイズを大きくする */
-    width: 50px; /* ボタンの幅を設定 */
-    height: 50px; /* ボタンの高さを設定（幅と同じにする） */
-    border-radius: 50%; /* ボタンを完全に丸くする */
-    display: flex; /* コンテンツを中央揃えするためにフレックスボックスを使用 */
-    align-items: center;
-    justify-content: center;
+
+.countdown-container {
+  margin: 5rem;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center; /* 中央揃え */
+  align-items: center;
+}
+
+.time {
+  margin: 0.2rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time1 {
+  border-radius: 1rem;
+  padding: 3rem;
+  font-size: 32px;
+}
+
+#hour, #min, #sec {
+  font-size: 3rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* ボタン間のスペースを設定 */
+  justify-content: center; /* ボタンを中央揃え */
+  margin-top: 1rem; /* 上部に余白を追加 */
+}
+
+.down-buttun, .up-buttun {
+  font-size: 1.5rem;
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* 親要素の丸い形を維持 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* 余分なスペースを排除 */
   float:left;
+  margin-right: 100px;
 }
 
+.down-buttun button, .up-buttun button {
+  width: 100%;  /* ボタンを親要素のサイズにフィットさせる */
+  height: 100%; /* ボタンを親要素のサイズにフィットさせる */
+  border-radius: 50%; /* ボタン自体を丸くする */
+  border: none;
+  background-color: transparent; /* 背景を透明にすることで親要素の色を維持 */
+  color: inherit; /* 親要素の色を引き継ぐ */
+  font-size: inherit; /* 親要素のフォントサイズを引き継ぐ */
+  float:left;
+  border: 2px solid black;
+}
