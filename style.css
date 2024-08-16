@@ -5,7 +5,7 @@ body {
 
 .timer {
   margin: 0 auto;
-  transform: translate(33%, -30%);
+  transform: translate(36%, -30%);
 }
 
 .button {
@@ -30,13 +30,16 @@ body {
 }
 
 .downbutton, .upbutton {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
   border-radius: 50%;
   background-color: lightgray;
   border: 1px solid black;
-  cursor: pointer;
+}
 
+.downbutton:active, .upbutton:active {
+  background-color: rgb(132, 132, 132);
 }
 
 .button {
@@ -47,10 +50,4 @@ body {
 
 .start, .stop, .reset {
   padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid black;
- 
 }
