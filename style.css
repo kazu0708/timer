@@ -14,7 +14,7 @@ html, body {
 }
 
 .hour,.minute,.second {
-  display: flex;
+
   flex-direction: column;
   align-items: center;
 }
@@ -38,7 +38,7 @@ html, body {
 
 
 .timerbutton {
-  display: flex;
+
   gap: 5px;
   margin-top: 10px;
 }
