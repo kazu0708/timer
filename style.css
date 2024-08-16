@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-=======
-html, body {
-  font-family: serif;
-  font-size: 16px;
-}
-
-
-
-.timer {
-  margin: 5rem;
-  display: flex;
-  justify-content: center; /* 中央揃え */
-  align-items: center;
-  gap: 20px;
-}
-
-.hour,.minute,.second {
-
-  flex-direction: column;
-  align-items: center;
-}
-
->>>>>>> e431238241c51418c3292e969cc524e49f936d5a
 .inputhourtext, .inputminutetext, .inputsecondtext {
   width: 50px;
   height: 50px;
