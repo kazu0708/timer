@@ -1,46 +1,18 @@
-html, body {
-  font-family: serif;
-  font-size: 16px;
-}
-
-
-
-.timer {
-  margin: 5rem;
-  display: flex;
-  justify-content: center; /* 中央揃え */
-  align-items: center;
-  gap: 20px;
-}
-
-.hour,.minute,.second {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .inputhourtext, .inputminutetext, .inputsecondtext {
   width: 50px;
+  height: 50px;
+  font-size: 32px;
   text-align: center;
-  margin-right: 10px; /* テキストボックスとラベルの間にスペースを追加 */
 }
 
-.hour, .minute, .second > input[type="text"] {
-  display: inline-block;
-  vertical-align: middle;
+.hour, .minute, .second {
+  margin: 0 auto;
+  padding: 30px;
+  float: left;
 }
 
 .hour p, .minute p, .second p {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px; 
-}
-
-
-.timerbutton {
-  display: flex;
-  gap: 5px;
-  margin-top: 10px;
+  margin-left: 100px; 
 }
 
 .downbutton, .upbutton {
@@ -49,20 +21,15 @@ html, body {
   border-radius: 50%;
   background-color: lightgray;
   border: 1px solid black;
-  cursor: pointer;
 }
 
 .button {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
 }
 
 .start, .stop, .reset {
   padding: 10px 20px;
   border: none;
-  cursor: pointer;
   background-color: white;
   border-radius: 5px;
   border: 1px solid black;
