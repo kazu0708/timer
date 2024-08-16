@@ -1,9 +1,11 @@
 body {
   width: 100%;
+  position: relative;
 }
 
 .timer {
   margin: 0 auto;
+  transform: translate(33%, -30%);
 }
 
 .button {
@@ -20,6 +22,7 @@ body {
 .hour, .minute, .second {
   float: left;
   padding: 30px;
+  text-align: center;
 }
 
 .hour p, .minute p, .second p {
