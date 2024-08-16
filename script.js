@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const hour = document.getElementById("hour");
-    const min = document.getElementById("minute");
-    const sec = document.getElementById("second");
+    const hour = document.getElementById("hourtext");
+    const min = document.getElementById("minutetext");
+    const sec = document.getElementById("secondtext");
     const hdown = document.getElementById('hourdownbutton');
     const hup = document.getElementById('hourupbutton');
     const mdown = document.getElementById('minutedownbutton');
