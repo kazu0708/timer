@@ -19,6 +19,24 @@ html, body {
   align-items: center;
 }
 
+.inputhourtext, .inputminutetext, .inputsecondtext {
+  width: 50px;
+  text-align: center;
+  margin-right: 10px; /* テキストボックスとラベルの間にスペースを追加 */
+}
+
+.hour, .minute, .second > input[type="text"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hour p, .minute p, .second p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; 
+}
+
+
 .timerbutton {
   display: flex;
   gap: 5px;
