@@ -48,6 +48,21 @@ body {
   text-align: center;
 }
 
-.start, .stop, .reset {
+#start, #stop, #reset {
+  margin: 0 auto;
   padding: 10px 20px;
+}
+
+#start {
+  display: block;
+  background-color: #6495ed;
+}
+
+#stop {
+  display: none;
+  background-color: #adff2f;
+}
+
+#reset {
+  margin-top: 20px;
 }

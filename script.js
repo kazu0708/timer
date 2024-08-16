@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sec.value = seconds.toString().padStart(2, '0');
     });
 
+    start.addEventListener('click', () => {
+        start.style.display = 'none';
+        stop.style.display = 'block';
+    });
+
+    stop.addEventListener('click', () => {
+        stop.style.display = 'none';
+        start.style.display = 'block';
+    });
+
     const countdown = () => {
         let hours = parseInt(hour.value) || 0;
         let minutes = parseInt(min.value) || 0;
@@ -61,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (hours === 0 && minutes === 0 && seconds === 0) {
             clearInterval(timerInterval);
+            stop.style.display = 'none';
+            start.style.display = 'block';
             return;
         }
 
