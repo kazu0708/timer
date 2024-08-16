@@ -32,17 +32,22 @@ body {
   border-radius: 50%;
   background-color: lightgray;
   border: 1px solid black;
+  cursor: pointer;
+
 }
 
 .button {
   clear: both;
   margin-top: 20px;
+  text-align: center;
 }
 
 .start, .stop, .reset {
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
   background-color: white;
   border-radius: 5px;
   border: 1px solid black;
+ 
 }
