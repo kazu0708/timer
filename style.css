@@ -31,10 +31,9 @@ html, body {
   }
   .down-buttun {
     font-size: 1.5rem; /* ボタン内のテキストサイズを大きくする */
-    padding: 0.1rem; /* パディングを設定 */
-    width: 10rem; /* ボタンの幅を設定 */
-    height: 10rem; /* ボタンの高さを設定（幅と同じにする） */
-    border-radius: 100%; /* ボタンを完全に丸くする */
+    width: 50px; /* ボタンの幅を設定 */
+    height: 50px; /* ボタンの高さを設定（幅と同じにする） */
+    border-radius: 50%; /* ボタンを完全に丸くする */
     display: flex; /* コンテンツを中央揃えするためにフレックスボックスを使用 */
     align-items: center;
     justify-content: center;
@@ -43,10 +42,9 @@ html, body {
 }
 .up-buttun {
     font-size: 1.5rem; /* ボタン内のテキストサイズを大きくする */
-    padding: 0.1em; /* パディングを設定 */
-    width: 10rem; /* ボタンの幅を設定 */
-    height: 10rem; /* ボタンの高さを設定（幅と同じにする） */
-    border-radius: 100%; /* ボタンを完全に丸くする */
+    width: 50px; /* ボタンの幅を設定 */
+    height: 50px; /* ボタンの高さを設定（幅と同じにする） */
+    border-radius: 50%; /* ボタンを完全に丸くする */
     display: flex; /* コンテンツを中央揃えするためにフレックスボックスを使用 */
     align-items: center;
     justify-content: center;
