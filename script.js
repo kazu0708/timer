@@ -12,6 +12,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
 
+    hdown.addEventListener('click', () => {
+        let hours = parseInt(hour.value) || 0;
+        if (hours > 0) {
+            hours -= 1;
+        }
+        hour.value = hours.toString().padStart(2, '0');
+    });
+
+    hup.addEventListener('click', () => {
+        let hours = parseInt(hour.value) || 0;
+        hours += 1;
+        hour.value = hours.toString().padStart(2, '0');
+    });
+
+    mdown.addEventListener('click', () => {
+        let minutes = parseInt(min.value) || 0;
+        if (minutes > 0) {
+            minutes -= 1;
+        }
+        min.value = minutes.toString().padStart(2, '0');
+    });
+
+    mup.addEventListener('click', () => {
+        let minutes = parseInt(min.value) || 0;
+        minutes += 1;
+        min.value = minutes.toString().padStart(2, '0');
+    });
+
+    sdown.addEventListener('click', () => {
+        let seconds = parseInt(sec.value) || 0;
+        if (seconds > 0) {
+            seconds -= 1;
+        }
+        sec.value = seconds.toString().padStart(2, '0');
+    });
+
+    sup.addEventListener('click', () => {
+        let seconds = parseInt(sec.value) || 0;
+        seconds += 1;
+        sec.value = seconds.toString().padStart(2, '0');
+    });
+
     const countdown = () => {
         let hours = parseInt(hour.value) || 0;
         let minutes = parseInt(min.value) || 0;
