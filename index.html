@@ -6,36 +6,38 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="countdown-container">
-    <h1>カウントダウンタイマー</h1>
-    <div class="time-container">
-      <p class="time"><span id="hour"></span></p>
-      <p class="time1">時間</p>
-      <p class="time"><span id="min"></span></p>
-      <p class="time1">分</p>
-      <p class="time"><span id="sec"></span></p>
-      <p class="time1">秒</p>
-    </div>
-    <div class="down-buttun">
-    <button type="button">-</button>
-    </div>
-    <div class="up-buttun">
-    <button type="button">+</button>
-    </div>
-    <div class="down-buttun">
-    <button type="button">-</button>
+    <div class="timer">
+      <div class="hour">
+        <input type="text" class="inputhourtext" id="textbox">
+        <p>時間</p>
+        <div class="timerbutton">
+          <button class="downbutton" id="hourdownbutton">－</button>
+          <button class="upbutton" id="hourupbutton">＋</button>
+        </div>
+      </div>
+      <div class="minute">
+        <input type="text" class="inputhourtext" id="textbox">
+        <p>分</p>
+        <div class="timerbutton">
+          <div class="timerbutton">
+            <button class="downbutton" id="minutedownbutton">－</button>
+            <button class="upbutton" id="minuteupbutton">＋</button>
+          </div>
+        </div>
       </div>
       <div class="second">
         <input type="text" class="inputhourtext" id="textbox">
         <p>秒</p>
-        <button id="seconddownbutton">－</button>
-        <button id="secondupbutton">＋</button>
+        <div class="timerbutton">
+          <button class="downbutton" id="seconddownbutton">－</button>
+          <button class="upbutton" id="secondupbutton">＋</button>
+        </div>
       </div>
     </div>
-    <div class="up-buttun">
-    <button type="button">+</button>
+    <div class="button">
+      <button class="start">タイマー開始</button>
+      <button class="stop">一時停止</button>
+      <button class="reset">リセット</button>
     </div>
-  </div>
-<script src="script.js"></script>
 </body>
 </html>
