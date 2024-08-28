@@ -13,47 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const reset = document.getElementById('reset');
     const startAudio = new Audio('Start.mp3');
 
-    hdown.addEventListener('click', () => {
-        let hours = parseInt(hour.value) || 0;
-        if (hours > 0) {
-            hours -= 1;
-        }
-        hour.value = hours.toString().padStart(2, '0');
-    });
+// 値を増減する共通の関数
+    function adjustTime(element, increment) {
+        let value = parseInt(element.value) || 0;
+        value += increment;
+        if (value < 0) value = 0;
+        element.value = value.toString().padStart(2, '0');
+    }
 
-    hup.addEventListener('click', () => {
-        let hours = parseInt(hour.value) || 0;
-        hours += 1;
-        hour.value = hours.toString().padStart(2, '0');
-    });
+    hdown.addEventListener('click', () => adjustTime(hour, -1));
+    hup.addEventListener('click', () => adjustTime(hour, 1));
 
-    mdown.addEventListener('click', () => {
-        let minutes = parseInt(min.value) || 0;
-        if (minutes > 0) {
-            minutes -= 1;
-        }
-        min.value = minutes.toString().padStart(2, '0');
-    });
+    mdown.addEventListener('click', () => adjustTime(min, -1));
+    mup.addEventListener('click', () => adjustTime(min, 1));
 
-    mup.addEventListener('click', () => {
-        let minutes = parseInt(min.value) || 0;
-        minutes += 1;
-        min.value = minutes.toString().padStart(2, '0');
-    });
+    sdown.addEventListener('click', () => adjustTime(sec, -1));
+    sup.addEventListener('click', () => adjustTime(sec, 1));
 
-    sdown.addEventListener('click', () => {
-        let seconds = parseInt(sec.value) || 0;
-        if (seconds > 0) {
-            seconds -= 1;
-        }
-        sec.value = seconds.toString().padStart(2, '0');
-    });
-
-    sup.addEventListener('click', () => {
-        let seconds = parseInt(sec.value) || 0;
-        seconds += 1;
-        sec.value = seconds.toString().padStart(2, '0');
-    });
 
     const countdown = () => {
         let hours = parseInt(hour.value) || 0;
