@@ -86,12 +86,22 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerInterval;
 
     start.addEventListener('click', () => {
+        let hours = parseInt(hour.value) || 0;
+        let minutes = parseInt(min.value) || 0;
+        let seconds = parseInt(sec.value) || 0;
+    
+        if (hours === 0 && minutes === 0 && seconds === 0) {
+            alert('タイマーを設定してください。');
+            return;
+        }
+    
         startAudio.play();
         clearInterval(timerInterval);
         timerInterval = setInterval(countdown, 1000);
         start.style.display = 'none';
         stop.style.display = 'block';
     });
+    
 
     stop.addEventListener('click', () => {
         clearInterval(timerInterval);
