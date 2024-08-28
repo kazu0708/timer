@@ -12,15 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
     const startAudio = new Audio('Start.mp3');
+    const countAudio = new Audio('CountUpDown.mp3');
 
     function adjustTime(element, increment) {
         let value = parseInt(element.value) || 0;
         value += increment;
         if (value < 0) value = 0;
         element.value = value.toString().padStart(2, '0');
+        countAudio.play();
     }
 
-    hdown.addEventListener('click', () => adjustTime(hour, -1));
+    hdown.addEventListener('click', () => {adjustTime(hour, -1)});
     hup.addEventListener('click', () => adjustTime(hour, 1));
 
     mdown.addEventListener('click', () => adjustTime(min, -1));
