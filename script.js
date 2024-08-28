@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reset = document.getElementById('reset');
     const startAudio = new Audio('Start.mp3');
     const countAudio = new Audio('CountUpDown.mp3');
+    const timeupAudio = new Audio('timeup.mp3');
 
     function adjustTime(element, increment) {
         let value = parseInt(element.value) || 0;
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (hours === 0 && minutes === 0 && seconds === 0) {
             clearInterval(timerInterval);
+            timeupAudio.play();
             stop.style.display = 'none';
             start.style.display = 'block';
             return;
