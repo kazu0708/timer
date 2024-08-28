@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const reset = document.getElementById('reset');
     const startAudio = new Audio('Start.mp3');
 
-// 値を増減する共通の関数
     function adjustTime(element, increment) {
         let value = parseInt(element.value) || 0;
         value += increment;
