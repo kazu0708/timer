@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const start = document.getElementById('start');
     const stop = document.getElementById('stop');
     const reset = document.getElementById('reset');
+    const startAudio = new Audio('Start.mp3');
 
     hdown.addEventListener('click', () => {
         let hours = parseInt(hour.value) || 0;
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerInterval;
 
     start.addEventListener('click', () => {
+        startAudio.play();
         clearInterval(timerInterval);
         timerInterval = setInterval(countdown, 1000);
         start.style.display = 'none';
